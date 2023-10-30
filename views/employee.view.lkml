@@ -19,4 +19,9 @@ view: employee {
     type: count
     drill_fields: [id]
   }
+
+  measure: sum {
+    type: sum
+    sql: ${id} ;;
+  }
 }
