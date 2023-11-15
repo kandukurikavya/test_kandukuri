@@ -2,13 +2,20 @@ view: irs_990_ez_2012 {
   sql_table_name: `finance_data.irs_990_ez_2012` ;;
 
   dimension: basisalesexpnsothr {
-    type: number
+    type: string
+
     description: "Cost or other basis and sales expenses"
     sql: ${TABLE}.basisalesexpnsothr ;;
   }
   dimension: costgoodsold {
     type: number
     description: "Less: cost of goods sold"
+    sql: ${TABLE}.costgoodsold ;;
+  }
+
+  dimension: test {
+    type: number
+    #description: "Less: cost of goods sold"
     sql: ${TABLE}.costgoodsold ;;
   }
   dimension: direxpns {
