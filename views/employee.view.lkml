@@ -17,7 +17,7 @@ view: employee {
   }
   measure: count {
     type: count
-    drill_fields: [salary,month]
+    drill_fields: [salary]
   }
 
   measure: sum {
