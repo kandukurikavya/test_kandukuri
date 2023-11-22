@@ -23,6 +23,7 @@ view: tab {
     type: string
     sql: concat(${first_name},"",${last_name}) ;;
   }
+
   dimension: first_name {
     type: string
     sql: ${TABLE}.first_name ;;
