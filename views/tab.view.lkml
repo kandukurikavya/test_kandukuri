@@ -18,11 +18,15 @@ view: tab {
     datatype: date
     sql: ${TABLE}.dob ;;
   }
-
+dimension: end {
+  type: number
+  sql: ${id}/100 ;;
+}
   dimension: start {
     type: number
     sql: ${id}*100 ;;
   }
+
 
   dimension: name {
     type: string
