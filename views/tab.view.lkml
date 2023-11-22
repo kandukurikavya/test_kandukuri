@@ -19,6 +19,11 @@ view: tab {
     sql: ${TABLE}.dob ;;
   }
 
+  dimension: start {
+    type: number
+    sql: ${id}*100 ;;
+  }
+
   dimension: name {
     type: string
     sql: concat(${first_name},"",${last_name}) ;;
