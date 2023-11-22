@@ -20,6 +20,11 @@ view: employee {
     drill_fields: [id]
   }
 
+  dimension: salary100 {
+    type: number
+    sql: ${salary}*100 ;;
+  }
+
 measure: average {
   type: average
   sql: ${salary} ;;
