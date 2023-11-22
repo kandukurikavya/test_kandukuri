@@ -17,9 +17,13 @@ view: employee {
   }
   measure: count {
     type: count
-    drill_fields: [salary]
+    drill_fields: [id]
   }
 
+measure: average {
+  type: average
+  sql: ${salary} ;;
+}
   measure: sum {
     type: sum
     sql: ${id} ;;
