@@ -20,7 +20,7 @@ view: tab {
   }
 dimension: end {
   type: number
-  sql: ${id}/100 ;;
+  sql: ${id}/1000 ;;
 }
   dimension: start {
     type: number
