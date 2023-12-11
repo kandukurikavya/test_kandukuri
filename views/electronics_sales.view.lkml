@@ -4,7 +4,15 @@ view: electronics_sales {
   dimension: brand {
     type: string
     sql: ${TABLE}.brand ;;
+    link: {
+
+      label: "linking a dashboard"
+
+      url: "https://gcpm2316.cloud.looker.com/dashboards/31?Brand={{brand._value}}&Category={{_filters['electronics_sales.category'] | url_encode }}"
+      #{{ _filters['electronics_sales.state'] | url_encode }}"
+    }
   }
+
   dimension: category {
     type: string
     sql: ${TABLE}.category ;;
@@ -12,6 +20,8 @@ view: electronics_sales {
   dimension: item_id {
     type: number
     sql: ${TABLE}.item_id ;;
+
+
   }
   dimension: model_attr {
     type: string
